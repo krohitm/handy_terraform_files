@@ -53,4 +53,5 @@ module "network_fabric-net-firewall" {
   network                 = module.network.network_name
   internal_ranges_enabled = true
   internal_ranges         = ["10.0.0.0/16"]
+    }
 
