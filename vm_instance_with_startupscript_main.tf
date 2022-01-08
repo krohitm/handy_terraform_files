@@ -11,7 +11,7 @@ resource "google_compute_network" "vpc_network" {
 }
 resource "google_compute_instance" "vm_instance" {
   name = "terraform-host"
-  metadata_startup_script = file("startup.sh")
+  metadata_startup_script = file("apache_server_startup.sh")
   machine_type = "f1-micro"
   tags = ["web"]
   zone = var.zone
